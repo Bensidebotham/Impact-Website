@@ -3,82 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impact S&T | Engineering Innovation</title>
+  <title>Impact Science and Technology | Engineering Innovation</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="container nav-container">
-      <a href="index.html" class="logo"><img src="images/ImpactLogo.png" alt="Impact S&T Logo"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <a href="index.html" class="logo"><img src="images/ImpactLogo.png" alt="Impact Science and Technology Logo"></a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Engineering Innovation for a Better Tomorrow</h1>
-        <p>Impact S&T delivers cutting-edge, patent-driven solutions for the world's toughest challenges.</p>
-        <a href="contact.html" class="cta-btn">Get in Touch</a>
+
+  <section class="hero">
+    <h1 class="fade-in slide-up">Engineering Innovation for a Better Tomorrow</h1>
+    <p class="fade-in slide-up" style="animation-delay:0.2s">Impact Science and Technology delivers cutting-edge, patent-driven solutions for the world's toughest challenges.</p>
+    <a href="contact.html" class="btn fade-in slide-up" style="animation-delay:0.4s">Get in Touch</a>
+  </section>
+
+  <section class="section">
+    <div class="cards">
+      <div class="card animated-stagger">
+        <h3>Innovative R&amp;D</h3>
+        <p>We push boundaries with research and development in engineering and technology.</p>
       </div>
-    </section>
-    <section class="features">
-      <div class="container">
-        <h2>What We Do</h2>
-        <div class="feature-list">
-          <div class="feature">
-            <div class="feature-icon">🔬</div>
-            <h3>Innovative R&D</h3>
-            <p>We push boundaries with research and development in engineering and technology.</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">🤝</div>
-            <h3>Collaboration</h3>
-            <p>Partnering with industry leaders to bring ideas to life and create real-world impact.</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">🛠️</div>
-            <h3>Product Design</h3>
-            <p>From concept to prototype, we design products that solve real problems.</p>
-          </div>
-        </div>
+      <div class="card animated-stagger">
+        <h3>Collaboration</h3>
+        <p>Partnering with industry leaders to bring ideas to life and create real-world impact.</p>
       </div>
-    </section>
-    <section class="news">
-      <div class="container">
-        <h2>Latest News</h2>
-        <ul>
-          <li>Impact S&T secures new patent for implant fixation technology.</li>
-          <li>Upcoming webinar: Innovations in medical device engineering.</li>
-          <li>Impact S&T featured in Tech Innovators Magazine.</li>
-        </ul>
+      <div class="card animated-stagger">
+        <h3>Product Design</h3>
+        <p>From concept to prototype, we design products that solve real problems.</p>
       </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="images/ImpactLogo.png" alt="Impact S&T Logo">
-        </div>
-        <div class="footer-links">
-          <a href="about.html">About</a>
-          <a href="products.html">Products</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="footer-info">
-          <p>&copy; 2025 Impact S&T. All rights reserved.</p>
-        </div>
+      <div class="card animated-stagger">
+        <h3>Latest News</h3>
+        <p>Impact Science and Technology secures new patent for implant fixation technology. Featured in Tech Innovators Magazine.</p>
       </div>
     </div>
+  </section>
+
+  <footer>
+    <img src="images/ImpactLogo.png" alt="Impact Science and Technology Logo" style="height:32px;vertical-align:middle;margin-bottom:8px;">
+    <div style="margin-top:8px; color:var(--muted);">&copy; 2024 Impact Science and Technology. All rights reserved.</div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    // Animate hero elements
+    document.addEventListener('DOMContentLoaded', function() {
+      // Staggered animation for cards
+      const cards = document.querySelectorAll('.card.animated-stagger');
+      cards.forEach((card, i) => {
+        setTimeout(() => {
+          card.classList.add('slide-up');
+          card.style.opacity = 1;
+        }, 300 + i * 180);
+      });
+    });
+  </script>
 </body>
 </html>
