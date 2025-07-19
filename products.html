@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products | Impact Science and Technology</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -23,156 +23,316 @@
       </ul>
     </nav>
   </header>
+
   <main>
+    <!-- Hero Section -->
     <section class="hero">
-      <div class="container">
-        <h1>Product Examples</h1>
-        <p>Explore our innovative solutions designed to meet the needs of various industries.</p>
+      <div class="section-content">
+        <h1 class="fade-in slide-up">Our Products</h1>
+        <p class="fade-in slide-up" style="animation-delay:0.2s">Cutting-edge solutions that push the boundaries of what's possible in gaming, sports, and medical technology.</p>
       </div>
     </section>
-    <section class="features">
-      <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 3rem;">
-          <div style="flex: 2; padding-right: 2rem;">
-            <h2 style="margin-bottom: 1rem; color: var(--accent);">GameGoggles™ – YOU ARE THERE</h2>
-            <h3 style="margin-bottom: 1.5rem; color: var(--text);">Immersive Wireless Gaming Headgear</h3>
-            
-            <p style="margin-bottom: 1.5rem;">GameGoggles™ revolutionize how you interact with virtual worlds by combining immersive visuals, integrated audio, voice interaction, and finger-based control into one sleek, adjustable headset.</p>
-            
-            <h4 style="color: var(--accent); margin-bottom: 1rem;">Head-Mounted Display:</h4>
-            <ul style="margin-bottom: 1.5rem;">
-              <li><strong>Dual Flip Monitors</strong><br>Monitors flip up for instant return to reality — ideal for quick breaks or multi-tasking.</li>
-              <li><strong>Fine Focus Adjustment</strong><br>Dial in perfect vision by adjusting the monitor-to-eye distance.</li>
-              <li><strong>Coarse Adjustment System</strong><br>Custom-fit bridge for fast fitting and comfort, adaptable to any user.</li>
-            </ul>
-            
-            <h4 style="color: var(--accent); margin-bottom: 1rem;">Integrated Acoustic Headset:</h4>
-            <ul style="margin-bottom: 1.5rem;">
-              <li>Built-in stereo audio delivers immersive sound with noise-isolating cups.</li>
-              <li>Wireless design for a fully untethered experience.</li>
-            </ul>
-            
-            <h4 style="color: var(--accent); margin-bottom: 1rem;">Voice-Enabled Microphone:</h4>
-            <ul style="margin-bottom: 1.5rem;">
-              <li>Embedded directional mic captures your voice clearly — perfect for team chat, game commands, or voice assistants.</li>
-            </ul>
-            
-            <h4 style="color: var(--accent); margin-bottom: 1rem;">Finger Clip Cursor Controller (NEW):</h4>
-            <ul style="margin-bottom: 1.5rem;">
-              <li>Innovative finger-mounted sensor lets you move your cursor, aim, or interact with on-screen elements via subtle finger gestures.</li>
-              <li>Ideal for gamers with limited mobility or who want hands-free interaction.</li>
-              <li>Compatible with PC, consoles, and mobile devices.</li>
-            </ul>
+
+    <!-- GameGoggles Product Section -->
+    <section class="product-showcase">
+      <div class="section-content">
+        <div class="product-header">
+          <div class="product-badge">
+            <span class="badge-icon">🎮</span>
+            <span class="badge-text">Gaming Innovation</span>
           </div>
-          
-          <div style="flex: 1; text-align: center;">
-            <h3 style="color: var(--accent); margin-bottom: 1rem;">GameGoggles™</h3>
-            <div style="margin-bottom: 2rem;">
-              <div style="width: 200px; height: 150px; background: #333; margin: 0 auto 1rem; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--muted);">Headset Image</div>
-              <div style="width: 150px; height: 50px; background: #333; margin: 0 auto; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--muted);">Finger Mouse</div>
+          <h2 class="product-title">GameGoggles™</h2>
+          <p class="product-subtitle">YOU ARE THERE</p>
+          <p class="product-description">Revolutionary immersive wireless gaming headgear that combines cutting-edge visuals, integrated audio, voice interaction, and finger-based control into one sleek, adjustable headset.</p>
+        </div>
+
+        <div class="product-layout">
+          <div class="product-content">
+            <div class="feature-group">
+              <h3 class="feature-title">Head-Mounted Display</h3>
+              <div class="feature-cards">
+                <div class="feature-card">
+                  <div class="feature-icon">👁️</div>
+                  <h4>Dual Flip Monitors</h4>
+                  <p>Monitors flip up for instant return to reality — ideal for quick breaks or multi-tasking.</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-icon">🔧</div>
+                  <h4>Fine Focus Adjustment</h4>
+                  <p>Dial in perfect vision by adjusting the monitor-to-eye distance.</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-icon">⚙️</div>
+                  <h4>Coarse Adjustment System</h4>
+                  <p>Custom-fit bridge for fast fitting and comfort, adaptable to any user.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-group">
+              <h3 class="feature-title">Integrated Acoustic Headset</h3>
+              <div class="feature-cards">
+                <div class="feature-card">
+                  <div class="feature-icon">🎧</div>
+                  <h4>Immersive Audio</h4>
+                  <p>Built-in stereo audio delivers immersive sound with noise-isolating cups.</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-icon">🔌</div>
+                  <h4>Wireless Design</h4>
+                  <p>Fully untethered experience for complete freedom of movement.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-group">
+              <h3 class="feature-title">Voice-Enabled Microphone</h3>
+              <div class="feature-cards">
+                <div class="feature-card">
+                  <div class="feature-icon">🎤</div>
+                  <h4>Directional Mic</h4>
+                  <p>Embedded directional mic captures your voice clearly — perfect for team chat, game commands, or voice assistants.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-group">
+              <h3 class="feature-title">Finger Clip Cursor Controller</h3>
+              <div class="feature-cards">
+                <div class="feature-card">
+                  <div class="feature-icon">👆</div>
+                  <h4>Gesture Control</h4>
+                  <p>Innovative finger-mounted sensor lets you move your cursor, aim, or interact with on-screen elements via subtle finger gestures.</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-icon">♿</div>
+                  <h4>Accessibility Focused</h4>
+                  <p>Ideal for gamers with limited mobility or who want hands-free interaction.</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-icon">🔄</div>
+                  <h4>Universal Compatibility</h4>
+                  <p>Compatible with PC, consoles, and mobile devices.</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        
-        <div style="margin-bottom: 3rem;">
-          <h4 style="color: var(--accent); margin-bottom: 1rem;">Tech Specs:</h4>
-          <ul style="margin-bottom: 1.5rem;">
-            <li><strong>Wireless Protocols:</strong> Bluetooth LE & Wi-Fi Direct</li>
-            <li><strong>Battery Life:</strong> 6+ hours active use</li>
-            <li><strong>Display:</strong> Dual micro-OLED with independent focus controls</li>
-            <li><strong>Audio:</strong> 3D positional sound support</li>
-            <li><strong>Sensors:</strong> Accelerometer, Gyroscope, Optical Hand Tracking</li>
-          </ul>
-          
-          <h4 style="color: var(--accent); margin-bottom: 1rem;">Who's It For?</h4>
-          <ul style="margin-bottom: 2rem;">
-            <li><strong>Gamers:</strong> Ultimate immersive gameplay experience.</li>
-            <li><strong>VR/AR Developers:</strong> Rapid prototyping & real-world interaction.</li>
-            <li><strong>Educational Simulation:</strong> Great for training, medical, and flight sims.</li>
-            <li><strong>Accessibility Users:</strong> Voice and finger-clip control for adaptive gaming.</li>
-          </ul>
-          
-          <div style="text-align: center; font-size: 1.5rem; font-style: italic; color: var(--accent); font-weight: bold;">
-            "GameGoggles: Step Inside Your Game."
+
+          <div class="product-visual">
+            <div class="visual-container">
+              <div class="product-image">
+                <div class="image-placeholder">
+                  <span class="placeholder-icon">🎮</span>
+                  <span class="placeholder-text">Headset Image</span>
+                </div>
+              </div>
+              <div class="product-image secondary">
+                <div class="image-placeholder">
+                  <span class="placeholder-icon">👆</span>
+                  <span class="placeholder-text">Finger Mouse</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- SURE Putt Product Section -->
-        <hr style="border: 1px solid var(--muted); margin: 4rem 0;">
-        
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 3rem;">
-          <div style="flex: 2; padding-right: 2rem;">
-            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-              <div style="width: 60px; height: 60px; background: #4CAF50; border-radius: 50%; margin-right: 1rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">🏌️</div>
-              <h2 style="margin: 0; color: var(--accent);">SURE Putt™ – Master Every Stroke</h2>
+        <div class="product-specs">
+          <h3 class="specs-title">Technical Specifications</h3>
+          <div class="specs-grid">
+            <div class="spec-item">
+              <span class="spec-label">Wireless Protocols</span>
+              <span class="spec-value">Bluetooth LE & Wi-Fi Direct</span>
             </div>
-            
-            <p style="margin-bottom: 1.5rem;">Train smarter and putt with confidence. The SURE Putt™ system uses real-time feedback and intelligent sensors to help you master the four key elements of putting: Distance, Slope, Line, and Impact — all with the feel of your actual putter.</p>
-            
-            <h4 style="color: var(--accent); margin-bottom: 1rem;">Training Putter – Learn with Precision</h4>
-            <ul style="margin-bottom: 1.5rem;">
-              <li><strong>Distance Sensor</strong><br>Measures putt length and backswing-to-follow-through consistency.</li>
-              <li><strong>Force Transducer</strong><br>Accurately detects the force of impact, helping develop feel and control.</li>
-              <li><strong>Laser Alignment</strong><br>Projects a straight putting line to aid visualization and line setup.</li>
-              <li><strong>Digital Controls Readout</strong><br>See real-time data and feedback directly on the handle-mounted screen.</li>
-              <li><strong>Built-In Level Sensor</strong><br>Detects and displays slope to simulate real-world green conditions.</li>
-            </ul>
-          </div>
-          
-          <div style="flex: 1; text-align: center;">
-            <h3 style="color: var(--accent); margin-bottom: 1rem;">SURE Putt™</h3>
-            <div style="margin-bottom: 2rem;">
-              <div style="width: 200px; height: 300px; background: #333; margin: 0 auto 1rem; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--muted); flex-direction: column;">
-                <div style="margin-bottom: 1rem;">Training Putter</div>
-                <div style="font-size: 0.8rem;">with sensors & display</div>
-              </div>
-              <div style="width: 180px; height: 280px; background: #222; margin: 0 auto; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--muted); flex-direction: column;">
-                <div style="margin-bottom: 1rem;">Regulation Putter</div>
-                <div style="font-size: 0.8rem;">(same putter without electronics)</div>
-              </div>
+            <div class="spec-item">
+              <span class="spec-label">Battery Life</span>
+              <span class="spec-value">6+ hours active use</span>
             </div>
-            <div style="color: var(--text); font-weight: bold; margin-top: 1rem;">Same Putter for both Training and Play</div>
+            <div class="spec-item">
+              <span class="spec-label">Display</span>
+              <span class="spec-value">Dual micro-OLED with independent focus controls</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Audio</span>
+              <span class="spec-value">3D positional sound support</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Sensors</span>
+              <span class="spec-value">Accelerometer, Gyroscope, Optical Hand Tracking</span>
+            </div>
           </div>
         </div>
 
-        <div style="margin-bottom: 3rem;">
-          <h4 style="color: var(--accent); margin-bottom: 1.5rem;">Training Features</h4>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
-            <div style="border: 2px solid #4CAF50; padding: 1.5rem; border-radius: 12px;">
-              <h5 style="color: #4CAF50; margin-bottom: 1rem;">Feature #1</h5>
-              <p><strong>Ball impact at center of ball or above to prevent initial bouncing.</strong> Front Face angled back to assist.</p>
-              <div style="width: 100%; height: 150px; background: #333; margin: 1rem 0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--muted);">Negative Face Angle Diagram</div>
+        <div class="target-audience">
+          <h3 class="audience-title">Who's It For?</h3>
+          <div class="audience-grid">
+            <div class="audience-card">
+              <div class="audience-icon">🎮</div>
+              <h4>Gamers</h4>
+              <p>Ultimate immersive gameplay experience.</p>
             </div>
-            <div style="border: 2px solid #4CAF50; padding: 1.5rem; border-radius: 12px;">
-              <h5 style="color: #4CAF50; margin-bottom: 1rem;">Feature #2</h5>
-              <p><strong>Bottom surface of putter head has relief</strong> to help prevent grounding the putter before hitting the golf ball.</p>
-              <div style="width: 100%; height: 150px; background: #333; margin: 1rem 0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--muted);">7° Relief Diagram</div>
+            <div class="audience-card">
+              <div class="audience-icon">💻</div>
+              <h4>VR/AR Developers</h4>
+              <p>Rapid prototyping & real-world interaction.</p>
             </div>
-            <div style="border: 2px solid #4CAF50; padding: 1.5rem; border-radius: 12px;">
-              <h5 style="color: #4CAF50; margin-bottom: 1rem;">Feature #3</h5>
-              <p><strong>Front face impact surface is hardened stainless steel.</strong> Geometry incorporates a central flat area for a correct stroke and angled surfaces to help correct for strokes with rotation at the wrist.</p>
-              <div style="width: 100%; height: 150px; background: #333; margin: 1rem 0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--muted);">Central Impact Flat - 5° Diagram</div>
+            <div class="audience-card">
+              <div class="audience-icon">🎓</div>
+              <h4>Educational Simulation</h4>
+              <p>Great for training, medical, and flight sims.</p>
             </div>
-            <div style="border: 2px solid #4CAF50; padding: 1.5rem; border-radius: 12px;">
-              <h5 style="color: #4CAF50; margin-bottom: 1rem;">Feature #4</h5>
-              <p><strong>Angled markings assist in understanding the alignment</strong> and stoke for straight and sloped putts.</p>
-              <div style="width: 100%; height: 150px; background: #333; margin: 1rem 0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--muted);">Angled Markings Diagram</div>
+            <div class="audience-card">
+              <div class="audience-icon">♿</div>
+              <h4>Accessibility Users</h4>
+              <p>Voice and finger-clip control for adaptive gaming.</p>
             </div>
-            <div style="border: 2px solid #4CAF50; padding: 1.5rem; border-radius: 12px;">
-              <h5 style="color: #4CAF50; margin-bottom: 1rem;">Feature #5</h5>
-              <p><strong>Ball radius and putter radius match</strong> to assist in retrieving ball.</p>
-              <div style="width: 100%; height: 150px; background: #333; margin: 1rem 0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--muted);">Same Radius Diagram</div>
+          </div>
+        </div>
+
+        <div class="product-tagline">
+          <p>"GameGoggles: Step Inside Your Game."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SURE Putt Product Section -->
+    <section class="product-showcase light">
+      <div class="section-content">
+        <div class="product-header">
+          <div class="product-badge golf">
+            <span class="badge-icon">🏌️</span>
+            <span class="badge-text">Sports Technology</span>
+          </div>
+          <h2 class="product-title">SURE Putt™</h2>
+          <p class="product-subtitle">Master Every Stroke</p>
+          <p class="product-description">Train smarter and putt with confidence. The SURE Putt™ system uses real-time feedback and intelligent sensors to help you master the four key elements of putting: Distance, Slope, Line, and Impact — all with the feel of your actual putter.</p>
+        </div>
+
+        <div class="product-layout">
+          <div class="product-content">
+            <div class="feature-group">
+              <h3 class="feature-title">Training Putter – Learn with Precision</h3>
+              <div class="feature-cards">
+                <div class="feature-card">
+                  <div class="feature-icon">📏</div>
+                  <h4>Distance Sensor</h4>
+                  <p>Measures putt length and backswing-to-follow-through consistency.</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-icon">⚡</div>
+                  <h4>Force Transducer</h4>
+                  <p>Accurately detects the force of impact, helping develop feel and control.</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-icon">🔦</div>
+                  <h4>Laser Alignment</h4>
+                  <p>Projects a straight putting line to aid visualization and line setup.</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-icon">📱</div>
+                  <h4>Digital Controls Readout</h4>
+                  <p>See real-time data and feedback directly on the handle-mounted screen.</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-icon">📊</div>
+                  <h4>Built-In Level Sensor</h4>
+                  <p>Detects and displays slope to simulate real-world green conditions.</p>
+                </div>
+              </div>
             </div>
-            <div style="border: 2px solid #4CAF50; padding: 1.5rem; border-radius: 12px;">
-              <h5 style="color: #4CAF50; margin-bottom: 1rem;">Feature #6 - Optimize Materials</h5>
-              <p><strong>Aluminum body with hard black coat</strong> for durability and easily read markings. <strong>Stainless Steel impact insert</strong> for durability (non-rusting) and increased mass at impact.</p>
-              <div style="width: 100%; height: 150px; background: #333; margin: 1rem 0; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--muted);">Material Composition Image</div>
+          </div>
+
+          <div class="product-visual">
+            <div class="visual-container">
+              <div class="product-image">
+                <div class="image-placeholder">
+                  <span class="placeholder-icon">🏌️</span>
+                  <span class="placeholder-text">Training Putter</span>
+                  <span class="placeholder-subtext">with sensors & display</span>
+                </div>
+              </div>
+              <div class="product-image secondary">
+                <div class="image-placeholder">
+                  <span class="placeholder-icon">⛳</span>
+                  <span class="placeholder-text">Regulation Putter</span>
+                  <span class="placeholder-subtext">(same putter without electronics)</span>
+                </div>
+              </div>
+            </div>
+            <div class="putter-note">
+              <p>Same Putter for both Training and Play</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="training-features">
+          <h3 class="features-title">Training Features</h3>
+          <div class="features-grid">
+            <div class="training-card">
+              <div class="card-header">
+                <span class="feature-number">01</span>
+                <h4>Negative Face Angle</h4>
+              </div>
+              <p>Ball impact at center of ball or above to prevent initial bouncing. Front Face angled back to assist.</p>
+              <div class="feature-diagram">
+                <span class="diagram-placeholder">Negative Face Angle Diagram</span>
+              </div>
+            </div>
+            <div class="training-card">
+              <div class="card-header">
+                <span class="feature-number">02</span>
+                <h4>7° Relief</h4>
+              </div>
+              <p>Bottom surface of putter head has relief to help prevent grounding the putter before hitting the golf ball.</p>
+              <div class="feature-diagram">
+                <span class="diagram-placeholder">7° Relief Diagram</span>
+              </div>
+            </div>
+            <div class="training-card">
+              <div class="card-header">
+                <span class="feature-number">03</span>
+                <h4>Central Impact Flat</h4>
+              </div>
+              <p>Front face impact surface is hardened stainless steel. Geometry incorporates a central flat area for a correct stroke and angled surfaces to help correct for strokes with rotation at the wrist.</p>
+              <div class="feature-diagram">
+                <span class="diagram-placeholder">Central Impact Flat - 5° Diagram</span>
+              </div>
+            </div>
+            <div class="training-card">
+              <div class="card-header">
+                <span class="feature-number">04</span>
+                <h4>Angled Markings</h4>
+              </div>
+              <p>Angled markings assist in understanding the alignment and stroke for straight and sloped putts.</p>
+              <div class="feature-diagram">
+                <span class="diagram-placeholder">Angled Markings Diagram</span>
+              </div>
+            </div>
+            <div class="training-card">
+              <div class="card-header">
+                <span class="feature-number">05</span>
+                <h4>Matching Radius</h4>
+              </div>
+              <p>Ball radius and putter radius match to assist in retrieving ball.</p>
+              <div class="feature-diagram">
+                <span class="diagram-placeholder">Same Radius Diagram</span>
+              </div>
+            </div>
+            <div class="training-card">
+              <div class="card-header">
+                <span class="feature-number">06</span>
+                <h4>Optimized Materials</h4>
+              </div>
+              <p>Aluminum body with hard black coat for durability and easily read markings. Stainless Steel impact insert for durability (non-rusting) and increased mass at impact.</p>
+              <div class="feature-diagram">
+                <span class="diagram-placeholder">Material Composition Image</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer>
     <div class="footer-content">
       <img src="images/ImpactLogo.png" alt="Impact Science and Technology Logo" class="footer-logo">
