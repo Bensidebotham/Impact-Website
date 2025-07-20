@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Impact Science and Technology</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -26,37 +26,37 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>About Us</h1>
-        <p>At <strong>Impact Science and Technology</strong>, we're a family-run team of professionals dedicated to creating smart, practical solutions across a wide range of fields — from medical devices to gaming hardware.</p>
+        <h1 class="fade-in slide-up">About Us</h1>
+        <p class="fade-in slide-up" style="animation-delay:0.2s">At <strong>Impact Science and Technology</strong>, we're a family-run team of professionals dedicated to creating smart, practical solutions across a wide range of fields — from medical devices to gaming hardware.</p>
         <br>
-        <p>With backgrounds in medicine, medical technology, computer engineering, and mechanical design, we specialize in turning ideas into working products. Whether you're a curious consumer interested in innovative tech like <strong>GameGoggles</strong>, or a company looking to bring a new concept to life, we're here to help from concept to creation.</p>
+        <p class="fade-in slide-up" style="animation-delay:0.4s">With backgrounds in medicine, medical technology, computer engineering, and mechanical design, we specialize in turning ideas into working products. Whether you're a curious consumer interested in innovative tech like <strong>GameGoggles</strong>, or a company looking to bring a new concept to life, we're here to help from concept to creation.</p>
       </div>
     </section>
     <section class="features">
       <div class="container">
-        <h2 style="text-align: center; margin-bottom: 3rem;">Our Team</h2>
+        <h2 style="text-align: center; margin-bottom: 3rem;" class="fade-in slide-up">Our Team</h2>
         <div class="cards" style="justify-content: center;">
-          <div class="card">
+          <div class="card animated-stagger">
             <div style="width: 80px; height: 80px; background: #333; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: var(--muted);">👩‍💼</div>
             <h3>Jane Doe</h3>
             <p>CEO & Founder</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <div style="width: 80px; height: 80px; background: #333; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: var(--muted);">👨‍🔬</div>
             <h3>John Smith</h3>
             <p>Lead Engineer</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <div style="width: 80px; height: 80px; background: #333; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: var(--muted);">👩‍🎨</div>
             <h3>Emily Lee</h3>
             <p>Product Designer</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <div style="width: 80px; height: 80px; background: #333; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: var(--muted);">👨‍💻</div>
             <h3>Michael Chen</h3>
             <p>Software Developer</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <div style="width: 80px; height: 80px; background: #333; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; color: var(--muted);">👩‍🔬</div>
             <h3>Sarah Johnson</h3>
             <p>Research Scientist</p>
@@ -66,8 +66,8 @@
     </section>
     <section class="news">
       <div class="container">
-        <h2>Our Values</h2>
-        <ul>
+        <h2 class="fade-in slide-up">Our Values</h2>
+        <ul class="fade-in slide-up" style="animation-delay:0.2s">
           <li>Innovation: Pushing the boundaries of what's possible</li>
           <li>Integrity: Maintaining the highest ethical standards</li>
           <li>Collaboration: Working together to achieve common goals</li>
@@ -83,5 +83,18 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    // Animate hero elements and team cards
+    document.addEventListener('DOMContentLoaded', function() {
+      // Staggered animation for team cards
+      const cards = document.querySelectorAll('.card.animated-stagger');
+      cards.forEach((card, i) => {
+        setTimeout(() => {
+          card.classList.add('slide-up');
+          card.style.opacity = 1;
+        }, 300 + i * 180);
+      });
+    });
+  </script>
 </body>
 </html> 

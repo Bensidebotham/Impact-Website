@@ -1135,3 +1135,457 @@ header {
     padding: 1.5rem;
   }
 } 
+
+/* Products Grid - Compact Layout */
+.products-grid {
+  padding: 80px 0;
+  background: var(--bg-black);
+}
+
+.product-card {
+  background: var(--bg-dark-grey);
+  border: 1px solid var(--border-grey);
+  border-radius: var(--radius);
+  padding: 3rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent);
+}
+
+.product-card.sports:hover {
+  border-color: #4CAF50;
+}
+
+.product-card-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.product-card .product-badge {
+  margin-bottom: 1rem;
+}
+
+.product-card .product-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .product-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-card .product-description {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.product-card-content {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.product-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.feature-item .feature-icon {
+  font-size: 1.5rem;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.feature-text h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-white);
+}
+
+.feature-text p {
+  font-size: 0.9rem;
+  color: var(--text-grey);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.product-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visual-placeholder {
+  background: var(--bg-grey);
+  border: 1px solid var(--border-grey);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.visual-placeholder:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.visual-placeholder .placeholder-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
+
+.visual-placeholder .placeholder-text {
+  font-weight: 600;
+  color: var(--text-light-grey);
+  font-size: 0.9rem;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-grey);
+}
+
+.tech-specs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.spec {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.product-card.sports .spec {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4CAF50;
+  border-color: rgba(76, 175, 80, 0.2);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.product-card.sports .btn-outline {
+  border-color: #4CAF50;
+  color: #4CAF50;
+}
+
+.product-card.sports .btn-outline:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+/* Product Separator */
+.product-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+  gap: 1rem;
+}
+
+.separator-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
+  flex: 1;
+  max-width: 200px;
+}
+
+.separator-icon {
+  font-size: 1.5rem;
+  background: var(--bg-dark-grey);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+
+/* Product Details Sections */
+.product-details {
+  padding: 80px 0;
+  background: var(--bg-black);
+  min-height: 100vh;
+}
+
+.details-header {
+  margin-bottom: 3rem;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: var(--accent-light);
+}
+
+.details-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin: 0;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.details-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.details-content h3:first-child {
+  margin-top: 0;
+}
+
+.specs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.spec-label {
+  font-weight: 600;
+  color: var(--text-light-grey);
+}
+
+.spec-value {
+  color: var(--text-grey);
+  text-align: right;
+  max-width: 60%;
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.audience-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.audience-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.audience-icon {
+  font-size: 1.5rem;
+}
+
+.audience-text {
+  font-weight: 500;
+  color: var(--text-light-grey);
+}
+
+.details-visual {
+  position: sticky;
+  top: 120px;
+}
+
+.training-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.training-feature {
+  background: var(--bg-dark-grey);
+  border: 1px solid var(--border-grey);
+  border-radius: var(--radius);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.training-feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--accent);
+}
+
+.training-feature .feature-number {
+  background: var(--accent);
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.training-feature h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-white);
+  margin-bottom: 0.75rem;
+}
+
+.training-feature p {
+  color: var(--text-grey);
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design for Products Grid */
+@media (max-width: 1024px) {
+  .product-card-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .product-visual {
+    order: -1;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .details-visual {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    padding: 2rem;
+  }
+  
+  .product-card .product-title {
+    font-size: 2rem;
+  }
+  
+  .product-actions {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+  
+  .tech-specs {
+    justify-content: center;
+  }
+  
+  .separator-line {
+    max-width: 100px;
+  }
+  
+  .training-features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    padding: 60px 0;
+  }
+  
+  .product-card {
+    padding: 1.5rem;
+  }
+  
+  .product-card .product-title {
+    font-size: 1.8rem;
+  }
+  
+  .feature-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .visual-placeholder {
+    min-height: 120px;
+    padding: 1.5rem;
+  }
+} 

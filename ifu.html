@@ -26,27 +26,27 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Instructions For Use</h1>
-        <p>Comprehensive guides and documentation for our products.</p>
+        <h1 class="fade-in slide-up">Instructions For Use</h1>
+        <p class="fade-in slide-up" style="animation-delay:0.2s">Comprehensive guides and documentation for our products.</p>
       </div>
     </section>
     <section class="features">
       <div class="container">
-        <h2>Product Documentation</h2>
+        <h2 class="fade-in slide-up">Product Documentation</h2>
         <div class="cards">
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>GameGoggles™ Setup Guide</h3>
             <p>Step-by-step instructions for setting up and using your GameGoggles™ headset.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Safety Guidelines</h3>
             <p>Important safety information and precautions for all our products.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Troubleshooting</h3>
             <p>Common issues and solutions to help you get the most out of your device.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Warranty Information</h3>
             <p>Details about product warranties, support, and maintenance guidelines.</p>
           </div>
@@ -61,5 +61,18 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    // Animate IFU documentation cards
+    document.addEventListener('DOMContentLoaded', function() {
+      // Staggered animation for documentation cards
+      const cards = document.querySelectorAll('.card.animated-stagger');
+      cards.forEach((card, i) => {
+        setTimeout(() => {
+          card.classList.add('slide-up');
+          card.style.opacity = 1;
+        }, 300 + i * 180);
+      });
+    });
+  </script>
 </body>
 </html> 

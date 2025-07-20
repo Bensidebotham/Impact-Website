@@ -26,32 +26,32 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Reamer Facts</h1>
-        <p>Technical specifications and detailed information about our medical reamer technology.</p>
+        <h1 class="fade-in slide-up">Reamer Facts</h1>
+        <p class="fade-in slide-up" style="animation-delay:0.2s">Technical specifications and detailed information about our medical reamer technology.</p>
       </div>
     </section>
     <section class="features">
       <div class="container">
-        <h2>Technical Information</h2>
+        <h2 class="fade-in slide-up">Technical Information</h2>
         <div class="cards">
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Material Specifications</h3>
             <p>Advanced biocompatible materials designed for optimal performance and patient safety.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Design Features</h3>
             <p>Precision-engineered cutting geometry for efficient bone preparation and minimal tissue trauma.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Sterilization Protocols</h3>
             <p>Comprehensive sterilization and reprocessing guidelines for safe medical device use.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Performance Data</h3>
             <p>Clinical performance metrics and testing results demonstrating device efficacy.</p>
           </div>
         </div>
-        <div style="margin-top: 3rem;">
+        <div class="fade-in slide-up" style="animation-delay:0.6s; margin-top: 3rem;">
           <h3 style="color: var(--accent); margin-bottom: 1.5rem;">Key Specifications</h3>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
             <div>
@@ -84,5 +84,18 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    // Animate reamer facts cards
+    document.addEventListener('DOMContentLoaded', function() {
+      // Staggered animation for technical cards
+      const cards = document.querySelectorAll('.card.animated-stagger');
+      cards.forEach((card, i) => {
+        setTimeout(() => {
+          card.classList.add('slide-up');
+          card.style.opacity = 1;
+        }, 300 + i * 180);
+      });
+    });
+  </script>
 </body>
 </html> 

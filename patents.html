@@ -26,32 +26,32 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Our Patents</h1>
-        <p>Innovation protected by intellectual property rights and patent-driven solutions.</p>
+        <h1 class="fade-in slide-up">Our Patents</h1>
+        <p class="fade-in slide-up" style="animation-delay:0.2s">Innovation protected by intellectual property rights and patent-driven solutions.</p>
       </div>
     </section>
     <section class="features">
       <div class="container">
-        <h2>Patent Portfolio</h2>
+        <h2 class="fade-in slide-up">Patent Portfolio</h2>
         <div class="cards">
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Implant Fixation Technology</h3>
             <p>Advanced medical device technology for secure, long-term orthopedic implant stabilization.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Gaming Interface Systems</h3>
             <p>Revolutionary input methods for immersive gaming and virtual reality experiences.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Wireless Communication</h3>
             <p>Innovative wireless protocols and communication systems for seamless device integration.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Motion Sensing Technology</h3>
             <p>Precision motion detection and tracking systems for interactive applications.</p>
           </div>
         </div>
-        <div style="margin-top: 3rem; text-align: center;">
+        <div class="fade-in slide-up" style="animation-delay:0.6s; margin-top: 3rem; text-align: center;">
           <p style="color: var(--muted); font-size: 1.1rem;">
             Impact Science and Technology continues to innovate and protect our technological advances through strategic patent development.
           </p>
@@ -66,5 +66,18 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    // Animate patent cards
+    document.addEventListener('DOMContentLoaded', function() {
+      // Staggered animation for patent cards
+      const cards = document.querySelectorAll('.card.animated-stagger');
+      cards.forEach((card, i) => {
+        setTimeout(() => {
+          card.classList.add('slide-up');
+          card.style.opacity = 1;
+        }, 300 + i * 180);
+      });
+    });
+  </script>
 </body>
 </html> 

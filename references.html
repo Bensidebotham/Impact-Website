@@ -26,32 +26,32 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1>References</h1>
-        <p>Research, publications, and industry recognition supporting our innovations.</p>
+        <h1 class="fade-in slide-up">References</h1>
+        <p class="fade-in slide-up" style="animation-delay:0.2s">Research, publications, and industry recognition supporting our innovations.</p>
       </div>
     </section>
     <section class="features">
       <div class="container">
-        <h2>Publications & Recognition</h2>
+        <h2 class="fade-in slide-up">Publications & Recognition</h2>
         <div class="cards">
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Technical Publications</h3>
             <p>Peer-reviewed papers and research contributions to medical device and gaming technology fields.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Industry Awards</h3>
             <p>Recognition from professional organizations and industry bodies for innovation excellence.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Media Coverage</h3>
             <p>Featured in Tech Innovators Magazine and other leading technology publications.</p>
           </div>
-          <div class="card">
+          <div class="card animated-stagger">
             <h3>Clinical Studies</h3>
             <p>Research validation and clinical trial data supporting our medical device innovations.</p>
           </div>
         </div>
-        <div style="margin-top: 3rem;">
+        <div class="fade-in slide-up" style="animation-delay:0.6s; margin-top: 3rem;">
           <h3 style="color: var(--accent); margin-bottom: 1.5rem;">Recent Highlights</h3>
           <ul style="color: var(--muted); line-height: 1.8;">
             <li>Featured in Tech Innovators Magazine for breakthrough gaming technology</li>
@@ -70,5 +70,18 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    // Animate reference cards
+    document.addEventListener('DOMContentLoaded', function() {
+      // Staggered animation for reference cards
+      const cards = document.querySelectorAll('.card.animated-stagger');
+      cards.forEach((card, i) => {
+        setTimeout(() => {
+          card.classList.add('slide-up');
+          card.style.opacity = 1;
+        }, 300 + i * 180);
+      });
+    });
+  </script>
 </body>
 </html> 
