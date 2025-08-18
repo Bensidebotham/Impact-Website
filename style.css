@@ -115,13 +115,19 @@ nav ul li a.active, nav ul li a:hover {
     background: transparent;
     color: var(--text-black);
     text-align: center;
-    padding: 120px 20px 160px;
-    min-height: 80vh;
+    padding: 80px 20px 120px;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+/* Compact Hero for other pages */
+.hero.compact {
+    padding: 40px 20px 80px;
+    min-height: 40vh;
 }
 
 
@@ -377,6 +383,10 @@ header {
   }
   .hero p {
     font-size: 1.2rem;
+  }
+  .hero {
+    padding: 60px 20px 80px;
+    min-height: 50vh;
   }
   nav {
     padding: 0.75rem 1.5rem;
@@ -1596,6 +1606,11 @@ header {
 @media (max-width: 480px) {
   .hero-text h1 {
     font-size: 2.2rem;
+  }
+  
+  .hero {
+    padding: 40px 20px 60px;
+    min-height: 40vh;
   }
   
   .reamer-hero-image,
